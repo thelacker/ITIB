@@ -1,4 +1,5 @@
 import math.tanh as tanh
+import math.cosh as cosh
 
 
 def main_function(x1, x2, x3, x4):
@@ -10,6 +11,19 @@ def main_function(x1, x2, x3, x4):
 
 def fault_counter(t, y)
     return t - y
+
+
+def w_delta_threshold(x, n, b):
+    return x*n*b
+
+
+
+def w_delta_logistic():
+    pass
+
+
+def w_counter(w, w_delta):
+    return w + w_delta
 
 
 def net(x, w, w0=0):
@@ -28,6 +42,10 @@ def af_threshold(net):
 
 def af_logistic(net):
     return (tanh(net)+1)/2
+
+
+def af_logistic_derivative(net):
+    return (pow( (1/cosh(net) ), 2) / 2)
 
 
 def read_file(file_path):
