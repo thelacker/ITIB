@@ -1,5 +1,4 @@
-import math.tanh as tanh
-import math.cosh as cosh
+from math import tanh, cosh
 
 
 def main_function(x1, x2, x3, x4):
@@ -9,7 +8,7 @@ def main_function(x1, x2, x3, x4):
         return 0
 
 
-def fault_counter(t, y)
+def fault_counter(t, y):
     return t - y
 
 
@@ -26,9 +25,9 @@ def w_counter(w, w_delta):
     return w + w_delta
 
 
-def net(x, w, w0=0):
+def net(x, w, w0):
     net = 0
-    for i in range(0,5):
+    for i in range(0,len(x)):
         net += w[i]*x[i]+w0
     return net
 
@@ -55,14 +54,28 @@ def read_file(file_path):
         if line[0] == '#':
             continue
         else:
-            input_data.append(float(line))
+            new_line = list()
+            line = line[::2]
+            for number in line:
+                try:
+                    new_line.append(int(number))
+                except:
+                    continue
+            input_data.append(new_line)
     return input_data
 
 
 def main():
-    input_data = read_file("input.txt")
-    print input_data
-
+    w = [0,0,0,0]
+    w0 = 0
+    X = read_file("input.txt")
+    F = list()
+    Y = list()
+    for i in range (0, len(X)):
+        F.append(main_function(X[i][0],X[i][1],X[i][2],X[i][3]))
+    for i in range (0,len(X)):
+        Y.append(af_threshold(net(X[i], w, w0)))
+    print Y 
 
 if __name__ == "__main__":
     main()
