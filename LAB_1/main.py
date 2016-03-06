@@ -82,8 +82,8 @@ def education(X, w, w0, x0):
         x = X[i]
         Y.append(af_threshold(net(X[i], w, w0)))
         b = F[i]-Y[i]
+        w0 += w_delta_threshold(x0, 0.3, b)
         for i in range (0, len(w)):
-            w0 += w_delta_threshold(x0, 0.3, b)
             w[i] += w_delta_threshold(x[i], 0.3, b)
 
     E = fault_counter(F,Y)
