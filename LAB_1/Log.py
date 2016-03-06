@@ -1,3 +1,6 @@
+# This module works with files - writing and reading logs
+
+# this function provides the reading of the xi table from file
 def read_file(file_path):
     file = open(file_path)
     input_data = list()
@@ -16,6 +19,7 @@ def read_file(file_path):
     return input_data
 
 
+# this function provides the log file writing process
 def write_log(file_path, F, Y, E, k, w, w0):
     file = open(file_path, 'a')
     file.write("k = " + str(k) + '\n')
