@@ -8,8 +8,12 @@ def main_function(x1, x2, x3, x4):
         return 0
 
 
-def fault_counter(t, y):
-    return t - y
+def fault_counter(F, Y):
+    E = 0
+    for i in range (0, len(F)):
+        if Y[i]!=F[i]:
+            E += 1
+    return E
 
 
 def w_delta_threshold(x, n, b):
@@ -73,7 +77,7 @@ def write_log(file_path, F, Y, E):
     file.write("\n\n")
 
 
-def main():
+def main(): 
     w = [0,0,0,0]
     w0 = 0
     X = read_file("input.txt")
@@ -83,10 +87,8 @@ def main():
         F.append(main_function(X[i][0],X[i][1],X[i][2],X[i][3]))
     for i in range(0,len(X)):
         Y.append(af_threshold(net(X[i], w, w0)))
-    E = 0
-    for i in range (0, len(F)):
-        if Y[i]!=F[i]:
-            E += 1
+    E = fault_counter(F,Y)
+
     write_log("output.txt", F, Y, E)
 
 if __name__ == "__main__":
