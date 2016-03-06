@@ -25,10 +25,6 @@ def w_delta_logistic():
     pass
 
 
-def w_counter(w, w_delta):
-    return w + w_delta
-
-
 def net(x, w, w0):
     net = 0
     for i in range(0,len(x)):
@@ -77,19 +73,33 @@ def write_log(file_path, F, Y, E):
     file.write("\n\n")
 
 
-def main(): 
-    w = [0,0,0,0]
-    w0 = 0
-    X = read_file("input.txt")
+def education(X, w, w0, x0):
     F = list()
     Y = list()
     for i in range(0, len(X)):
         F.append(main_function(X[i][0],X[i][1],X[i][2],X[i][3]))
     for i in range(0,len(X)):
+        x = X[i]
         Y.append(af_threshold(net(X[i], w, w0)))
-    E = fault_counter(F,Y)
+        b = F[i]-Y[i]
+        for i in range (0, len(w)):
+            w0 += w_delta_threshold(x0, 0.3, b)
+            w[i] += w_delta_threshold(x[i], 0.3, b)
 
+    E = fault_counter(F,Y)
     write_log("output.txt", F, Y, E)
+    return E, w, w0
+
+
+def main():
+    w = [0,0,0,0]
+    w0 = 0
+    x0 = 1
+    E = 1
+    X = read_file("input.txt")
+    while E != 0:
+        E, w, w0 = education(X, w, w0, x0)
+        print E, w, w0
 
 if __name__ == "__main__":
     main()
