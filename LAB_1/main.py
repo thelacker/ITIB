@@ -68,13 +68,12 @@ def read_file(file_path):
 def write_log(file_path, F, Y, E, k, w, w0):
     file = open(file_path, 'a')
     file.write("k = " + str(k) + '\n')
-    file.write("w = " + str(w) + '\t')
-    file.write("w0 = " + str(w0) + '\n')
     file.write("F = " + str(F) + '\n')
     file.write("Y = " + str(Y) + '\n')
     file.write("E = " + str(E) + '\n')
     file.write("\n\n")
-
+    file.write("w = " + str(w) + '\t')
+    file.write("w0 = " + str(w0) + '\n')
 
 def education_threshold(X, w, w0, x0, k):
     F = list()
