@@ -65,17 +65,29 @@ def read_file(file_path):
     return input_data
 
 
+def write_log(file_path, F, Y, E):
+    file = open(file_path, 'a')
+    file.write("F = " + str(F) + '\n')
+    file.write("Y = " + str(Y) + '\n')
+    file.write("E = " + str(E) + '\n')
+    file.write("\n\n")
+
+
 def main():
     w = [0,0,0,0]
     w0 = 0
     X = read_file("input.txt")
     F = list()
     Y = list()
-    for i in range (0, len(X)):
+    for i in range(0, len(X)):
         F.append(main_function(X[i][0],X[i][1],X[i][2],X[i][3]))
-    for i in range (0,len(X)):
+    for i in range(0,len(X)):
         Y.append(af_threshold(net(X[i], w, w0)))
-    print Y 
+    E = 0
+    for i in range (0, len(F)):
+        if Y[i]!=F[i]:
+            E += 1
+    write_log("output.txt", F, Y, E)
 
 if __name__ == "__main__":
     main()
