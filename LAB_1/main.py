@@ -65,15 +65,16 @@ def read_file(file_path):
     return input_data
 
 
-def write_log(file_path, F, Y, E):
+def write_log(file_path, F, Y, E, k):
     file = open(file_path, 'a')
+    file.write("k = " + str(k) + '\n')
     file.write("F = " + str(F) + '\n')
     file.write("Y = " + str(Y) + '\n')
     file.write("E = " + str(E) + '\n')
     file.write("\n\n")
 
 
-def education(X, w, w0, x0):
+def education(X, w, w0, x0, k):
     F = list()
     Y = list()
     for i in range(0, len(X)):
@@ -87,7 +88,7 @@ def education(X, w, w0, x0):
             w[i] += w_delta_threshold(x[i], 0.3, b)
 
     E = fault_counter(F,Y)
-    write_log("output.txt", F, Y, E)
+    write_log("output.txt", F, Y, E, k)
     return E, w, w0
 
 
@@ -96,10 +97,12 @@ def main():
     w0 = 0
     x0 = 1
     E = 1
+    k = 0
     X = read_file("input.txt")
     while E != 0:
-        E, w, w0 = education(X, w, w0, x0)
+        E, w, w0 = education(X, w, w0, x0, k)
         print E, w, w0
+        k += 1
 
 if __name__ == "__main__":
     main()
