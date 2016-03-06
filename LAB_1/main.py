@@ -110,6 +110,23 @@ def education_logistic(X, w, w0, x0, k):
     write_log("output_1.txt", F, Y, E, k, w, w0)
     return E, w, w0
 
+def education_small_sample(X, w, w0, x0, k):
+    F = list()
+    Y = list()
+    for i in range(0, len(X)):
+        F.append(main_function(X[i][0],X[i][1],X[i][2],X[i][3]))
+    for i in range(0,len(X), 3):
+        x = X[i]
+        Y.append(af_threshold(net(X[i], w, w0)))
+        b = F[i]-Y.pop()
+        w0 += w_delta_logistic(x0, 0.3, b, x, w, w0)
+        for i in range (0, len(w)):
+            w[i] += w_delta_logistic(x[i], 0.3, b, x, w, w0)
+
+    E = fault_counter(F, Y)
+    write_log("output_2.txt", F, Y, E, k, w, w0)
+    return E, w, w0
+
 
 def main():
     w = [0,0,0,0]
@@ -131,5 +148,18 @@ def main():
         E, w, w0 = education_logistic(X, w, w0, x0, k)
         print E, w, w0
         k += 1
+    """
+    w = [0,0,0,0]
+    w0 = 0
+    x0 = 1
+    E = 1
+    k = 0
+    while E != 0:
+        E, w, w0 = education_small_sample(X, w, w0, x0, k)
+        print E, w, w0
+        k += 1
+    """
+
+
 if __name__ == "__main__":
     main()
