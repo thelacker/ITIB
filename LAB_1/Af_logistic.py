@@ -6,7 +6,7 @@ from Log import write_log
 
 
 # the main y function
-def y_couter(net):
+def y_counter(net):
     if net >= 0:
         return 1
     else:
@@ -41,7 +41,7 @@ def education_logistic(X, w, w0, x0, k):
     # counting the Y function on k era with specified w array
     for i in range(0, len(X)):
         x = X[i]
-        Y.append(y_couter(net(X[i], w, w0)))
+        Y.append(y_counter(net(X[i], w, w0)))
 
         # step mistake is counted
         b = F[i] - Y[i]
