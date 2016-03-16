@@ -81,7 +81,7 @@ def main():
         if k > 20:
             return 0
     # showing the plot
-    error_plot(E_array, range(0, k), "Logistic f(net) function")
+    error_plot(E_array, range(0, k), "Small set with logistic f(net) function")
 
 if __name__ == "__main__":
     main()
