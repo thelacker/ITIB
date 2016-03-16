@@ -1,4 +1,4 @@
-# This module provides the whole program with the nessary methods
+# This module provides the whole program with the necessary methods
 
 from math import exp
 
@@ -27,19 +27,25 @@ def net(x, v):
         net += v[i] * fi_counter(x, i) + v[0]
     return net
 
-
+# fi counter
 def fi_counter(x, J):
     fi = 0
+
+    # fi_j is always 1
     if J == 0:
         return 1
     else:
+        # searching for the core of fi
         c = find_C(J)
+
+        # counting fi result
         for i in range(4):
             fi += (x[i] - c[i])**2
         fi = exp(-fi)
         return fi
 
 
+# cores of fi cells
 def find_C(J):
     if J == 1:
         return [0, 0, 0, 0]

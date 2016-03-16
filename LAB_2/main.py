@@ -4,6 +4,7 @@ from Graph import *
 
 def main():
     # reading the function table
+    # making an array of v
     X = read_file("input.txt")
     v = [0, 0, 0, 0]
 
@@ -15,8 +16,8 @@ def main():
     # era counter
     k = 0
 
+    # the min education
     i_list = [0, 1, 2, 8]
-    # i_list = range(16)
     # while error is not 0 changing the wi array
     while E != 0:
         # educating the neural network and writing the result to log file

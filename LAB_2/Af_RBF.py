@@ -31,11 +31,11 @@ def education_RBF(X, v, k, i_list):
         # step mistake is counted
         b = bool_function(X[i][0], X[i][1], X[i][2], X[i][3]) - y_counter(net(X[i], v))
 
-        # all the w are recounted by the delta rule
+        # all the v are recounted by the delta rule
         for j in range(0, len(v)):
             v[j] += v_delta(0.3, b, x, v, j)
 
-    # counting the F function
+    # counting the Y function
     for i in range(0, len(X)):
          Y.append(y_counter(net(X[i], v)))
 

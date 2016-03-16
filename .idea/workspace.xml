@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e41106d7-48fe-47c9-8dcd-65e1bfd56fb1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_1/output.txt" afterPath="$PROJECT_DIR$/LAB_1/output.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_1/output_1.txt" afterPath="$PROJECT_DIR$/LAB_1/output_1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_1/output_2.txt" afterPath="$PROJECT_DIR$/LAB_1/output_2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_2/Af_RBF.py" afterPath="$PROJECT_DIR$/LAB_2/Af_RBF.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_2/Tools.py" afterPath="$PROJECT_DIR$/LAB_2/Tools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_2/main.py" afterPath="$PROJECT_DIR$/LAB_2/main.py" />
     </list>
     <ignored path="ITIB.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,14 +25,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LAB_2/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2947761">
-              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Af_RBF.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LAB_2/Af_RBF.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tools.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LAB_2/Tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.06716418">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,11 +90,11 @@
         <option value="$PROJECT_DIR$/LAB_1/output_2.txt" />
         <option value="$PROJECT_DIR$/LAB_2/RBF.py" />
         <option value="$PROJECT_DIR$/LAB_1/Log.py" />
-        <option value="$PROJECT_DIR$/LAB_2/Af_RBF.py" />
         <option value="$PROJECT_DIR$/LAB_2/Log.py" />
-        <option value="$PROJECT_DIR$/LAB_2/Tools.py" />
         <option value="$PROJECT_DIR$/LAB_2/output_1.txt" />
         <option value="$PROJECT_DIR$/LAB_2/main.py" />
+        <option value="$PROJECT_DIR$/LAB_2/Af_RBF.py" />
+        <option value="$PROJECT_DIR$/LAB_2/Tools.py" />
       </list>
     </option>
   </component>
@@ -528,24 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LAB_2/Af_RBF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0895523">
-          <caret line="46" column="1" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LAB_2/Tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65339965">
-          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LAB_2/output_1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.3097015">
@@ -556,11 +559,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LAB_2/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2947761">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LAB_2/Af_RBF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LAB_2/Tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06716418">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
