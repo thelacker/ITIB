@@ -59,7 +59,7 @@ def main():
     # showing the plot
     error_plot(E_array, range(0, k), "Logistic f(net) function")
 
-"""
+
     # now the logistic activation function is working
     # start point
     w = [0, 0, 0, 0]
@@ -67,21 +67,21 @@ def main():
     E = 1
     E_array = list()
     k = 0
-
+    i_list = [0,1,2,4,8,9,10,12]
     # while error is not 0 changing the wi array
     while E != 0:
         # educating the neural network and writing the result to log file
-        E, w, w0 = education_small_sample(X, w, w0, x0, k)
+        E, w, w0 = education_small_sample(X, w, w0, x0, k, i_list)
 
         # appending the error to the array for the graph
         E_array.append(E)
 
         # next era
         k += 1
-
+        if k > 20:
+            return 0
     # showing the plot
     error_plot(E_array, range(0, k), "Logistic f(net) function")
-"""
 
 if __name__ == "__main__":
     main()

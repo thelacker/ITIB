@@ -60,22 +60,17 @@ def education_logistic(X, w, w0, x0, k):
 
 
 # education process
-def education_small_sample(X, w, w0, x0, k):
+def education_small_sample(X, w, w0, x0, k, i_list):
     # lists od F and Y values
     F = list()
     Y = list()
-    i_list = []
-    # counting the F function
-    for i in range(0, i_list):
-        F.append(bool_function(X[i][0], X[i][1], X[i][2], X[i][3]))
 
     # counting the Y function on k era with specified w array
-    for i in range(0, i_list):
+    for i in i_list:
         x = X[i]
-        Y.append(y_counter(net(X[i], w, w0)))
 
         # step mistake is counted
-        b = F[i] - Y[i]
+        b = bool_function(X[i][0], X[i][1], X[i][2], X[i][3]) - y_counter(net(X[i], w, w0))
 
         # all the w are recounted by the delta rule
         w0 += w_delta_logistic(x0, 0.3, b, x, w, w0)
