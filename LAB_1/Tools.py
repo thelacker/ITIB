@@ -7,7 +7,6 @@ def bool_function(x1, x2, x3, x4):
     else:
         return 0
 
-
 # the full error between F and Y counter
 def fault_counter(F, Y):
     E = 0

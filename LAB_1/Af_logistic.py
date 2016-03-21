@@ -88,5 +88,5 @@ def education_small_sample(X, w, w0, x0, k, i_list):
     E = fault_counter(F, Y)
 
     # writing the result to log file
-    write_log("output_2.txt", F, Y, E, k, w, w0)
+    write_log("output_3.txt", F, Y, E, k, w, w0)
     return E, w, w0
