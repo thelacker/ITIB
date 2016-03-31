@@ -27,4 +27,4 @@ def write_log(file_path, F, Y, E, k, v):
     file.write("Y = " + str(Y) + '\n')
     file.write("E = " + str(E) + '\n')
     file.write("\n\n")
-    file.write("v = " + str(v) + '\t')
+    file.write("v = " + str(v) + '\t\n')

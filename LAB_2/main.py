@@ -17,7 +17,7 @@ def main():
     k = 0
 
     # the min education
-    i_list = [0, 1, 2, 8]
+    i_list = [0, 1, 7, 8]
     # while error is not 0 changing the wi array
     while E != 0:
         # educating the neural network and writing the result to log file
