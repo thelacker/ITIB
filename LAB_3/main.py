@@ -4,23 +4,23 @@ def y_calculation(n, k, W, x, prenet):
     try:
         net = prenet[str([n, k])]
     except:
-        net = net_calculation(n, k, W, x)
+        net = net_calculation(n, k, W, x, prenet)
         prenet.update({str([n, k]): net})
     if net > 0:
         return 1
     elif net < 0:
         return -1
     else:
-        return net_calculation(n - 1, k, W, x)
+        return net_calculation(n - 1, k, W, x, prenet)
 
 
-def net_calculation(n, k, W, x):
+def net_calculation(n, k, W, x, prenet):
     res = 0
     for j in range(0, 42):
         if j == k:
             continue
         else:
-            res += W[j][k] * y_calculation(n - 1, j, W, x)
+            res += W[j][k] * y_calculation(n - 1, j, W, x, prenet)
     return res
 
 
@@ -45,31 +45,46 @@ def w_matrix_calculation(X):
     return W
 
 
-x1 = [1, 1, 1, 1, 1, 1, -1, -1, -1, -1, -1, 1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, 1, -1, -1, -1, -1, -1, 1, -1,
-      -1, -1, -1, -1, 1, 1, 1, 1, 1, 1]
+def read_input(filename="input.txt"):
+    f = open(filename)
+    X = list()
+    for line in f:
+        line.replace(" ", '')
+        newline = line.split(',')
+        line = list()
+        for digit in newline:
+            line.append(int(digit))
+        X.append(line)
+    return X
 
-x2 = [1, -1, -1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, -1, -1, -1, -1, -1, 1, -1, -1,
-      -1, -1, -1, 1, -1, -1, -1, -1, -1, 1]
 
-x3 = [1, 1, 1, 1, 1, 1, 1, -1, -1, -1, -1, -1, 1, -1, -1, -1, -1, -1, 1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, -1,
-      -1, -1, -1, 1, 1, 1, 1, 1, 1, 1]
-#    [1, 1, 1, 1, 1, 1, 1, -1, -1, -1, -1, -1, 1, -1, -1, -1, -1, -1, 1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1]
+def check_letter(y, X):
+    try:
+        return X.index(y) + 1
+    except:
+        return None
 
 
-X = list()
-X.append(x1)
-X.append(x2)
-X.append(x3)
+def find_letter(W, x):
+    y = list()
+    prenet = {}
+    pixels = 42
+    for i in range(0, pixels):
+        y.append(y_calculation(pixels, i, W, x, prenet))
+    return y
 
-x = [-1, -1, -1, -1, -1, 1, 1, -1, -1, -1, -1, -1, 1, -1, -1, -1, -1, -1, 1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1,
-     -1,
-     -1, -1, -1, 1, 1, 1, 1, 1, 1, 1]
 
-W = w_matrix_calculation(X)
-y = list()
-prenet = {}
+def main():
+    x = [1, -1, -1, -1, -1, -1, -1, 1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, -1, -1, -1, -1, -1, 1, -1,
+         -1, -1, -1, -1, 1, -1, -1, -1, -1, -1, 1]
 
-for i in range(0, 42):
-    y.append(y_calculation(42, i, W, x, prenet))
+    X = read_input()
+    W = w_matrix_calculation(X)
 
-print y
+    letter = find_letter(W, x)
+
+    print "This is letter " + str(check_letter(letter, X))
+
+
+if __name__ == "__main__":
+    main()
