@@ -1,26 +1,26 @@
-def y_calculation(n, k, W, x, prenet):
+def y_calculation(n, k, W, x, netDict):
     if n == 0:
         return x[k]
     try:
-        net = prenet[str([n, k])]
+        net = netDict[str([n, k])]
     except:
-        net = net_calculation(n, k, W, x, prenet)
-        prenet.update({str([n, k]): net})
+        net = net_calculation(n, k, W, x, netDict)
+        netDict.update({str([n, k]): net})
     if net > 0:
         return 1
     elif net < 0:
         return -1
     else:
-        return net_calculation(n - 1, k, W, x, prenet)
+        return net_calculation(n - 1, k, W, x, netDict)
 
 
-def net_calculation(n, k, W, x, prenet):
+def net_calculation(n, k, W, x, netDict):
     res = 0
     for j in range(0, 42):
         if j == k:
             continue
         else:
-            res += W[j][k] * y_calculation(n - 1, j, W, x, prenet)
+            res += W[j][k] * y_calculation(n - 1, j, W, x, netDict)
     return res
 
 
@@ -65,23 +65,24 @@ def check_letter(y, X):
         return None
 
 
-def find_letter(W, x):
+def define_letter(W, x):
     y = list()
-    prenet = {}
+    calculatedNetDict = {}
     pixels = 42
     for i in range(0, pixels):
-        y.append(y_calculation(pixels, i, W, x, prenet))
+        y.append(y_calculation(pixels, i, W, x, calculatedNetDict))
     return y
 
 
 def main():
-    x = [1, -1, -1, -1, -1, -1, -1, 1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, -1, -1, -1, -1, -1, 1, -1,
-         -1, -1, -1, -1, 1, -1, -1, -1, -1, -1, 1]
+    x = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 1, 1, -1, -1, -1,
+         -1, -1, 1, -1,
+         -1, -1, -1, -1, 1, 1, 1, 1, 1, 1]
 
     X = read_input()
     W = w_matrix_calculation(X)
 
-    letter = find_letter(W, x)
+    letter = define_letter(W, x)
 
     print "This is letter " + str(check_letter(letter, X))
 
