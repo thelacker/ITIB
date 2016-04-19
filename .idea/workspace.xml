@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e41106d7-48fe-47c9-8dcd-65e1bfd56fb1" name="Default" comment="DZ started">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZ/input.txt" />
+    <list default="true" id="e41106d7-48fe-47c9-8dcd-65e1bfd56fb1" name="Default" comment="Some functions added">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DZ/main.py" afterPath="$PROJECT_DIR$/DZ/main.py" />
     </list>
@@ -38,15 +37,14 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DZ/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.038394414">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.07853403">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
-                <element signature="e#46#135#0" expanded="false" />
-                <element signature="e#172#278#0" expanded="false" />
-                <element signature="e#324#1055#0" expanded="false" />
-                <element signature="e#1084#1265#0" expanded="false" />
-                <element signature="e#1294#1475#0" expanded="false" />
-                <element signature="e#1506#1627#0" expanded="false" />
+                <element signature="e#47#138#0" expanded="false" />
+                <element signature="e#176#286#0" expanded="false" />
+                <element signature="e#331#1068#0" expanded="false" />
+                <element signature="e#1313#1502#0" expanded="false" />
+                <element signature="e#1534#1659#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -525,7 +523,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461061217455</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Some functions added">
+      <created>1461066714660</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1461066714660</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -539,7 +543,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33038673" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33038673" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -570,7 +574,8 @@
     <MESSAGE value="Lab 3 is working" />
     <MESSAGE value="Lab 3 is done" />
     <MESSAGE value="DZ started" />
-    <option name="LAST_COMMIT_MESSAGE" value="DZ started" />
+    <MESSAGE value="Some functions added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some functions added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -587,7 +592,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="49" />
+      <option name="time" value="54" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -951,15 +956,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DZ/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.038394414">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.07853403">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
-            <element signature="e#46#135#0" expanded="false" />
-            <element signature="e#172#278#0" expanded="false" />
-            <element signature="e#324#1055#0" expanded="false" />
-            <element signature="e#1084#1265#0" expanded="false" />
-            <element signature="e#1294#1475#0" expanded="false" />
-            <element signature="e#1506#1627#0" expanded="false" />
+            <element signature="e#47#138#0" expanded="false" />
+            <element signature="e#176#286#0" expanded="false" />
+            <element signature="e#331#1068#0" expanded="false" />
+            <element signature="e#1313#1502#0" expanded="false" />
+            <element signature="e#1534#1659#0" expanded="false" />
           </folding>
         </state>
       </provider>
