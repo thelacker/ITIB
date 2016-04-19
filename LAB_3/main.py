@@ -29,7 +29,7 @@ def w_calculation(j, K, X):
         return 0
     else:
         res = 0
-        for l in range(0, 3):
+        for l in range(0, len(X)):
             res += X[l][j] * X[l][K]
         return res
 
@@ -61,7 +61,8 @@ def read_input(filename="input.txt"):
 def check_letter(y, X):
     try:
         return X.index(y) + 1
-    except:
+    except Exception as e:
+        print str(e)
         return None
 
 
@@ -75,8 +76,8 @@ def define_letter(W, x):
 
 
 def main():
-    x = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 1, 1, -1, -1, -1,
-         -1, -1, 1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1]
+    x = [-1, 1, 1, 1, 1, 1, -1, -1, -1, -1, -1, -1, 1, 1, -1, -1, -1, -1, 1, -1, 1, -1, -1, -1, 1, 1, 1, 1, 1, -1, 1,
+         -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1]
 
     X = read_input()
     W = w_matrix_calculation(X)
