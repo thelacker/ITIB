@@ -45,7 +45,7 @@ def w_matrix_calculation(X):
     return W
 
 
-def read_input(filename="input.txt"):
+def read_input(filename="figures.txt"):
     f = open(filename)
     X = list()
     for line in f:
@@ -76,15 +76,31 @@ def define_letter(W, x):
 
 
 def main():
-    x = [-1, 1, 1, 1, 1, 1, -1, -1, -1, -1, -1, -1, 1, 1, -1, -1, -1, -1, 1, -1, 1, -1, -1, -1, 1, 1, 1, 1, 1, -1, 1,
-         -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1]
+    x = list()
+    f = open("x'.txt")
+    old_x = f.read().split(',')
+    for number in old_x:
+        x.append(int(number))
 
     X = read_input()
     W = w_matrix_calculation(X)
 
     letter = define_letter(W, x)
+    letter = check_letter(letter, X)
 
-    print "This is letter " + str(check_letter(letter, X))
+    if letter == 1:
+        letter = 2
+    elif letter == 2:
+        letter = 4
+    elif letter == 3:
+        letter = 6
+    else:
+        letter = 'None'
+
+    f = open("output.txt", 'w')
+
+    f.writelines("X' = " + str(x))
+    f.write("\nThis is number " + str(letter))
 
 
 if __name__ == "__main__":
