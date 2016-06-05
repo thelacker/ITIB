@@ -80,11 +80,11 @@ def hopfild(x, W, X):
     letter = check_letter(letter_old, X)
 
     if letter == 1:
-        letter = 2
+        letter = "G"
     elif letter == 2:
-        letter = 4
+        letter = "H"
     elif letter == 3:
-        letter = 6
+        letter = "L"
     else:
         letter = 'None'
 
