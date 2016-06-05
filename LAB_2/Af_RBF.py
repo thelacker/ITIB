@@ -1,5 +1,5 @@
-from Tools import bool_function, net, fault_counter, fi_counter
 from Log import write_log
+from Tools import bool_function, net, fault_counter, fi_counter
 
 
 def y_counter(net):
@@ -33,7 +33,7 @@ def education_RBF(X, v, k, i_list):
 
         # all the v are recounted by the delta rule
         for j in range(0, len(v)):
-            v[j] += v_delta(0.3, b, x, v, j)
+            v[j] += v_delta(0.7, b, x, v, j)
 
     # counting the Y function
     for i in range(0, len(X)):

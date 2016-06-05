@@ -75,18 +75,9 @@ def define_letter(W, x):
     return y
 
 
-def main():
-    x = list()
-    f = open("x'.txt")
-    old_x = f.read().split(',')
-    for number in old_x:
-        x.append(int(number))
-
-    X = read_input()
-    W = w_matrix_calculation(X)
-
-    letter = define_letter(W, x)
-    letter = check_letter(letter, X)
+def hopfild(x, W, X):
+    letter_old = define_letter(W, x)
+    letter = check_letter(letter_old, X)
 
     if letter == 1:
         letter = 2
@@ -97,10 +88,46 @@ def main():
     else:
         letter = 'None'
 
-    f = open("output.txt", 'w')
+    f = open("output.txt", 'a+')
 
-    f.writelines("X' = " + str(x))
-    f.write("\nThis is number " + str(letter))
+    output_simbol = ""
+    output_simbol += "  _ _ _ _ _ _ _ _ _\n"
+    for i in range(7):
+        output_simbol += "|"
+        for j in range(6 * i, 6 * i + 6):
+            if letter_old[j] == 1:
+                output_simbol += " 1 "
+            else:
+                output_simbol += "   "
+            print letter_old[j]
+        output_simbol += "|"
+        output_simbol += "\n"
+    output_simbol += "| _ _ _ _ _ _ _ _ _|"
+    f.writelines(output_simbol)
+    f.write("\nThis is number " + str(letter) + "\n")
+
+
+def main():
+    x = list()
+    f = open("x'.txt")
+    old_x = f.read().split(',')
+    for number in old_x:
+        x.append(int(number))
+
+    X = read_input()
+    W = w_matrix_calculation(X)
+
+    f = open("output.txt", 'w')
+    f.write("\n\t\tFigures\n")
+    f.close()
+    hopfild(X[0], W, X)
+    hopfild(X[1], W, X)
+    hopfild(X[2], W, X)
+    f = open("output.txt", 'a+')
+    f.write("\n\t\tYour vector with errors\n")
+    f.close()
+    hopfild(x, W, X)
+
 
 
 if __name__ == "__main__":

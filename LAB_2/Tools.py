@@ -5,10 +5,10 @@ from math import exp
 
 # the main F bool function values counter
 def bool_function(x1, x2, x3, x4):
-    if (x1 + x2 + x3) * (x2 + x3 + x4):
-        return 1
-    else:
+    if ((x1 + x2) * x3) + x4:
         return 0
+    else:
+        return 1
 
 
 # the full error between F and Y counter
@@ -50,6 +50,10 @@ def find_C(J):
     if J == 1:
         return [0, 0, 0, 0]
     if J == 2:
-        return [0, 0, 0, 1]
+        return [0, 0, 1, 0]
     if J == 3:
+        return [0, 1, 0, 0]
+    if J == 4:
         return [1, 0, 0, 0]
+    if J == 5:
+        return [1, 1, 0, 0]

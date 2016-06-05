@@ -1,3 +1,4 @@
+import random
 from math import exp
 
 
@@ -36,12 +37,12 @@ def get_input(file_name="input.txt"):
     for i in range(0, int(input_data[2][1])):
         V.append([])
         for j in range(0, int(input_data[2][0]) + 1):
-            V[i].append(0)
+            V[i].append(random.randrange(-999, 999) / 1000.0)
     W = list()
     for i in range(0, int(input_data[2][1]) + 1):
         W.append([])
         for j in range(1, int(input_data[2][2]) + 1):
-            W[i].append(0)
+            W[i].append(random.randrange(-999, 999) / 1000.0)
     return X, T, V, W
 
 
@@ -94,6 +95,8 @@ def V_delta(V, E, W):
 
 
 X, T, V, W = get_input()
+print V
+print W
 Z = f_counter(z_in_couter(V, X))
 Y = f_counter(y_in_couter(W, Z))
 E = error_counter(T, Y)

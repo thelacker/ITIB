@@ -1,12 +1,13 @@
-from Log import read_file
 from Af_RBF import education_RBF
 from Graph import *
+from Log import read_file
+
 
 def main():
     # reading the function table
     # making an array of v
     X = read_file("input.txt")
-    v = [0, 0, 0, 0]
+    v = [0, 0, 0, 0, 0, 0]
 
     # error is not 0 for the first iteation
     # making a list of the errors for the graph
@@ -17,7 +18,7 @@ def main():
     k = 0
 
     # the min education
-    i_list = [0, 1, 7, 8]
+    i_list = [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     # while error is not 0 changing the wi array
     while E != 0:
         # educating the neural network and writing the result to log file
