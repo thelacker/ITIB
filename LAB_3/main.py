@@ -104,7 +104,7 @@ def hopfild(x, W, X):
         output_simbol += "\n"
     output_simbol += "| _ _ _ _ _ _ _ _ _|"
     f.writelines(output_simbol)
-    f.write("\nThis is number " + str(letter) + "\n")
+    f.write("\nThis is letter " + str(letter) + "\n")
 
 
 def main():

@@ -9,7 +9,7 @@
 |    1        1    |
 |       1  1       |
 | _ _ _ _ _ _ _ _ _|
-This is number 2
+This is number G
   _ _ _ _ _ _ _ _ _
 | 1              1 |
 | 1              1 |
@@ -19,7 +19,7 @@ This is number 2
 | 1              1 |
 | 1              1 |
 | _ _ _ _ _ _ _ _ _|
-This is number 4
+This is number H
   _ _ _ _ _ _ _ _ _
 | 1                |
 | 1                |
@@ -29,7 +29,7 @@ This is number 4
 | 1                |
 | 1  1  1  1  1  1 |
 | _ _ _ _ _ _ _ _ _|
-This is number 6
+This is number L
 
 		Your vector with errors
   _ _ _ _ _ _ _ _ _
@@ -41,4 +41,4 @@ This is number 6
 | 1              1 |
 | 1              1 |
 | _ _ _ _ _ _ _ _ _|
-This is number 4
+This is number H
