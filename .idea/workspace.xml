@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e41106d7-48fe-47c9-8dcd-65e1bfd56fb1" name="Default" comment="Done">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DZ/main.py" afterPath="$PROJECT_DIR$/DZ/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_2/Af_RBF.py" afterPath="$PROJECT_DIR$/LAB_2/Af_RBF.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_2/Tools.py" afterPath="$PROJECT_DIR$/LAB_2/Tools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_2/main.py" afterPath="$PROJECT_DIR$/LAB_2/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_2/output_1.txt" afterPath="$PROJECT_DIR$/LAB_2/output_1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_3/main.py" afterPath="$PROJECT_DIR$/LAB_3/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_3/figures.txt" afterPath="$PROJECT_DIR$/LAB_3/figures.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_3/output.txt" afterPath="$PROJECT_DIR$/LAB_3/output.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_3/x'.txt" afterPath="$PROJECT_DIR$/LAB_3/x'.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LAB_4/main.py" afterPath="$PROJECT_DIR$/LAB_4/main.py" />
     </list>
     <ignored path="ITIB.iws" />
@@ -32,11 +26,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LAB_3/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60777956">
-              <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LAB_4/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="128" column="54" selection-start-line="128" selection-start-column="54" selection-end-line="128" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="figures.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LAB_3/figures.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="x'.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LAB_3/x'.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="output.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LAB_3/output.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07131281">
+              <caret line="2" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -83,10 +117,11 @@
         <option value="$PROJECT_DIR$/LAB_2/Tools.py" />
         <option value="$PROJECT_DIR$/LAB_2/Af_RBF.py" />
         <option value="$PROJECT_DIR$/max" />
-        <option value="$PROJECT_DIR$/LAB_4/main.py" />
         <option value="$PROJECT_DIR$/LAB_3/x'.txt" />
         <option value="$PROJECT_DIR$/LAB_3/output.txt" />
         <option value="$PROJECT_DIR$/LAB_3/main.py" />
+        <option value="$PROJECT_DIR$/LAB_4/main.py" />
+        <option value="$PROJECT_DIR$/LAB_3/figures.txt" />
       </list>
     </option>
   </component>
@@ -121,7 +156,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,6 +204,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -496,7 +531,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461789129122</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Done">
+      <created>1465131411505</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1465131411505</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -865,7 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,7 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,7 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -889,7 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,17 +941,7 @@
     <entry file="file://$PROJECT_DIR$/LAB_4/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LAB_3/figures.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07131281">
-          <caret line="2" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="128" column="54" selection-start-line="128" selection-start-column="54" selection-end-line="128" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -927,18 +954,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LAB_3/output.txt">
+    <entry file="file://$PROJECT_DIR$/LAB_3/figures.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42787683">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LAB_3/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60777956">
-          <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LAB_3/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07131281">
+          <caret line="2" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="2" />
           <folding />
         </state>
       </provider>
